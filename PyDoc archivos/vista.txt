@@ -1,0 +1,27 @@
+NAME
+    vista
+
+FUNCTIONS
+    alta()
+        esta funcion, a traves del controller, realiza el alta con la base de datos
+
+    buscar_contacto()
+        esta funcion, a traves del controller, busca un contacto especÝfico
+
+    buscartodos()
+        esta funcion, a traves del controller, busca todos los contactos
+
+    call_exportar()
+        esta funcion, a traves del controller, exporta los datos de la agenda en .pdf, .csv, xml, json
+
+    curso()
+        esta funcion crea una pantalla en donde se muestran los datos del curso
+
+    editar()
+        esta funcion, a traves del controller, llama y ejecuta todo lo relacionado con el men· editar, dentro del cual se puede buscar, editar o eliminar un contacto en la base de datos
+
+    integrantes()
+        esta funcion crea una pantalla donde se muestran los integrantes del proyecto
+
+    limpiar()
+        esta funcion, a traves del controller, limpia los campos de la pantalla

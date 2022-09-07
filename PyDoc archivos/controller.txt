@@ -1,0 +1,27 @@
+NAME
+    controller
+
+FUNCTIONS
+    control_buscar_editar()
+        esta funcion se utiliza para buscar el contacto deseado cuando se quiere editar un contacto
+
+    control_buscarcontacto()
+        esta funcion busca un contacto especÝfico dentro de la agenda, y lo muestra en la pantalla principal
+
+    control_buscartodos(from_vista_todos)
+        funcion que busca todos los contactos de la agenda, y los carga en la pantalla principal
+
+    control_clear_window()
+        esta funcion se emplea limpiar los campos en la pantalla del menu editar
+
+    control_exportar()
+        esta funcion se emplea para exportar la agenda en formatos csv, pdf, json, xml
+
+    control_limpiar()
+        funcion que limpia los campos en la pantalla principal
+
+    control_pasaje_eliminar()
+        esta funcion se emplea para borrar un contacto de la base de datos
+
+    control_pasaje_regex()
+        esta funcion realiza el chequeo de los datos ingresados a travÚs de una expresi¾n regular,\u200b tambiÚn conocida como regex

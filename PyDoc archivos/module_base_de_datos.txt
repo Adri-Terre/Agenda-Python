@@ -1,0 +1,19 @@
+NAME
+    module_base_de_datos
+
+FUNCTIONS
+    connection_db()
+        este script permite conectarse con la tabla de la base de datos, y si no existe la crea con MySQL.
+
+    operacion_db(sql, val)
+        esta funcion, a traves de Peewee, se utiliza para grabar/actualizar los contactos en la base de datos
+
+    operacion_db_buscar(sql)
+        esta funcion, a traves de Peewee, se utiliza para buscar los contactos en la base de datos
+
+DATA
+    DJANGO_MAP = {'eq': <built-in function eq>, 'lt': <built-in f...gexp':...
+    EXCLUDED = <peewee._Namespace object>
+    JOIN = {'INNER': 'INNER JOIN', 'LEFT_OUTER': 'LEFT OUTE...: 'LATERAL',...
+    OP = {'AND': 'AND', 'OR': 'OR', 'ADD': '+', 'SUB': '-...REGEXP', 'CONC...
+    fn = <peewee.Function object>

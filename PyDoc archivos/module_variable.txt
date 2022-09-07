@@ -1,0 +1,18 @@
+NAME
+    module_variable
+
+DATA
+    actualizar_imagen = False
+    buscartodos_boton = True
+    codigo = 0
+    contacto_encontrado = []
+    contacto_search = []
+    dato_ingresado = ''
+    db_conectado = False
+    func_eliminar = False
+    func_modificar = False
+    image_64_encode = ''
+    var1 = False
+    var2 = False
+    ventana_open = False
+    ventana_open_editar = False

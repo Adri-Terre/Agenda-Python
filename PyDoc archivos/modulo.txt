@@ -1,0 +1,163 @@
+NAME
+    modulo
+
+CLASSES
+    builtins.object
+        Contacto
+        Observador
+            ConcreteObserverA
+        Patr_Obs
+            Agenda
+
+    class Agenda(Patr_Obs)
+     |  Method resolution order:
+     |      Agenda
+     |      Patr_Obs
+     |      builtins.object
+     |
+     |  Methods defined here:
+     |
+     |  __init__(self)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |
+     |  actualizar = funcion_interna_m(self, nombre, apellido, empresa, email, movil, codigo, nombre_aux, apellido_aux, empresa_aux, email_aux, movil_aux, image_64_encode_aux)
+     |
+     |  buscar(self, textoBuscar)
+     |      Esta funcion se utiliza tanto para buscar todos los contactos en la agenda, como asÝ tambiÚn uno especÝfico
+     |
+     |  cargar_contacto(self, nombre, apellido, empresa, email, movil, image_64_encode)
+     |      esta funcion carga un contacto en la base de datos
+     |
+     |  cargar_csv(self, nombre, apellidos, empresa, email, movil)
+     |      esta funcion carga la tabla en el .csv al exportar
+     |
+     |  eliminar = funcion_interna_e(self, nombre, apellido, empresa, email, movil, codigo)
+     |
+     |  funcion_decorar_actualizar(funcion_m)
+     |
+     |  funcion_decorar_eliminar(funcion_e)
+     |
+     |  grabar(self)
+     |      esta funcion se emplea para exportar la agenda a .csv
+     |
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Patr_Obs:
+     |
+     |  agregar(self, obj)
+     |
+     |  notificar(self)
+     |
+     |  quitar(self, obj)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Patr_Obs:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes inherited from Patr_Obs:
+     |
+     |  observadores = [<modulo.ConcreteObserverA object>]
+
+    class ConcreteObserverA(Observador)
+     |  ConcreteObserverA(obj)
+     |
+     |  Method resolution order:
+     |      ConcreteObserverA
+     |      Observador
+     |      builtins.object
+     |
+     |  Methods defined here:
+     |
+     |  __init__(self, obj)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |
+     |  update(self)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Observador:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+
+    class Contacto(builtins.object)
+     |  Contacto(nombre, apellido, empresa, email, movil)
+     |
+     |  Methods defined here:
+     |
+     |  __init__(self, nombre, apellido, empresa, email, movil)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |
+     |  nuevoId = count(0)
+
+    class Observador(builtins.object)
+     |  Methods defined here:
+     |
+     |  update(self)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+
+    class Patr_Obs(builtins.object)
+     |  Methods defined here:
+     |
+     |  agregar(self, obj)
+     |
+     |  notificar(self)
+     |
+     |  quitar(self, obj)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __dict__
+     |      dictionary for instance variables (if defined)
+     |
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |
+     |  observadores = [<modulo.ConcreteObserverA object>]
+
+FUNCTIONS
+    clear_window()
+        esta funcion limpia la pantalla del men· editar
+
+    exportar()
+        esta funcion exporta los datos de la agenda en .pdf .csv .xml y .json
+
+    foto_perfil_alta()
+        Esta funcion carga y asocia una foto de perfil con el nuevo contacto. Se emplea "base64" para codificar la imagen
+
+    foto_perfil_decode()
+        Esta funcion decodifica una foto de perfil previamente codificada en "base64" asociada al contacto buscado
+
+    limpiar()
+        funcion que limpia los campos en la pantalla principal
